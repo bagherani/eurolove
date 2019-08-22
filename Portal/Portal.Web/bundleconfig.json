@@ -1,0 +1,36 @@
+[
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/site.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/bundle.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery/jquery.min.js",
+      "wwwroot/lib/owl/owl.carousel.min.js",
+      "wwwroot/js/site.min.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/bundle.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/css/bootstrap.min.css",
+      "wwwroot/lib/owl/assets/owl.carousel.css",
+      "wwwroot/lib/owl/assets/owl.theme.default.css",
+      "wwwroot/lib/mdi/css/materialdesignicons.min.css",
+      "wwwroot/css/site.min.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/bundle-rtl.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/css/bootstrap-rtl.min.css",
+      "wwwroot/lib/owl/assets/owl.carousel.css",
+      "wwwroot/lib/owl/assets/owl.theme.default.css",
+      "wwwroot/lib/mdi/css/materialdesignicons.min.css",
+      "wwwroot/css/site.min.css"
+    ]
+  }
+]

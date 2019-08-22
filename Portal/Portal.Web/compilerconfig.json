@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/site.css",
+    "inputFile": "wwwroot/css/site.scss"
+  },
+  {
+    "outputFile": "wwwroot/lib/slick/slick.css",
+    "inputFile": "wwwroot/lib/slick/slick.scss"
+  },
+  {
+    "outputFile": "wwwroot/lib/mdi/css/materialdesignicons.css",
+    "inputFile": "wwwroot/lib/mdi/css/materialdesignicons.scss"
+  }
+]
