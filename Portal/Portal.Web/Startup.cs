@@ -56,6 +56,87 @@ namespace Portal.Web
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "italy",
+                    template: "اخذ-اقامت-ایتالیا", new
+                    {
+                        controller = "Countries",
+                        action = "Italy"
+                    });
+                routes.MapRoute(
+                    name: "italy",
+                    template: "اخذ-اقامت-پرتغال", new
+                    {
+                        controller = "Countries",
+                        action = "Portugal"
+                    });
+                routes.MapRoute(
+                    name: "italy",
+                    template: "اخذ-اقامت-اسلوونی", new
+                    {
+                        controller = "Countries",
+                        action = "Slovenia"
+                    });
+
+                routes.MapRoute(
+                    name: "italy2",
+                    template: "italy", new
+                    {
+                        controller = "Redirect",
+                        action = "Italy"
+                    });
+
+                routes.MapRoute(
+                   name: "slovenia2",
+                   template: "slovenia", new
+                   {
+                       controller = "Redirect",
+                       action = "Slovenia"
+                   });
+
+                routes.MapRoute(
+                  name: "portugal2",
+                  template: "portugal", new
+                  {
+                      controller = "Redirect",
+                      action = "Portugal"
+                  });
+
+                routes.MapRoute(
+                 name: "about",
+                 template: "درباره-ما", new
+                 {
+                     controller = "Home",
+                     action = "AboutUs"
+                 });
+
+
+                routes.MapRoute(
+                 name: "about2",
+                 template: "about-us", new
+                 {
+                     controller = "Redirect",
+                     action = "AboutUs"
+                 });
+
+
+
+                routes.MapRoute(
+                 name: "contact",
+                 template: "تماس-با-ما", new
+                 {
+                     controller = "Home",
+                     action = "ContactUs"
+                 });
+
+                routes.MapRoute(
+                 name: "contact2",
+                 template: "contact-us", new
+                 {
+                     controller = "Redirect",
+                     action = "ContactUs"
+                 });
+
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
