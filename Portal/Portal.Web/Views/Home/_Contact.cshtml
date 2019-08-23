@@ -1,5 +1,8 @@
 ﻿<section class="rg-contact-us">
-    <h2>تماس با ما</h2>
+    @if (Model != true)
+    {
+        <h2>تماس با ما</h2>
+    }
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-sm-12 col-md-6">
@@ -9,13 +12,13 @@
                 </a>
             </div>
             <div class="col-lg-3 col-sm-12 col-md-6">
-                <a target="_blank" href="tg:eurolove">
+                <a target="_blank" href="tg://resolve?domain=eurolove.ir">
                     <i class="mdi mdi-48px mdi-telegram"></i>
-                    <span>کانال تلگرام</span>
+                    <span class="ltr">@@EuroLove.ir</span>
                 </a>
             </div>
             <div class="col-lg-3 col-sm-12 col-md-6">
-                <a target="_blank" href="https://instagram.com/eurolove">
+                <a target="_blank" href="https://instagram.com/eurolove.ir">
                     <i class="mdi mdi-48px mdi-instagram"></i>
                     <span>اینستاگرام ما</span>
                 </a>

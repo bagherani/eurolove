@@ -3,10 +3,10 @@
     var currentCountry = "AboutPortugal";
 }
 
-<img src="~/img/about-portugal.png" alt="migration to portugal" class="img-fluid" />
+<img src="~/img/about-portugal.jpg" alt="migration to portugal" class="img-fluid" />
 <div class="container pt-5 inner-container">
     <div class="row">
-        <div class="col-lg-9 col-md-12">
+        <main class="col-lg-9 col-md-12">
             <h1>
                 همه چیز درباره کشور پرتغال
             </h1>
@@ -21,11 +21,10 @@
                     پس از تمام شدن سال پنجم می توانید برای اقامت دائم و پاسپورت ایتالیا اقدام نمایید. به طور کلی جهت سرمایه گذاری در هر کشور شما باید چند فاکتور مهم را مدنظر داشته باشید. از جمله این فاکتورها مالیات تعیین شده در آن کشور و همچنین نرخ تولید ناخالص داخلی آن کشور است که تعیین می کند میزان سود آوری شما در پروسه سرمایه گذاری به چه میزان خواهد بود. در سال 2016 مالیات در کشور ایتالیا حدود 31.17 درصد تعیین شده است.
                 </p>
             </section>
-        </div>
+        </main>
         <aside class="col-lg-3 col-md-12">
             <partial name="_Countries" model="@currentCountry" />
         </aside>
     </div>
-    <partial name="../Home/_Contact" />
-
 </div>
+<partial name="../Home/_Contact" />
