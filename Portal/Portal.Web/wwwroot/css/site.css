@@ -315,11 +315,48 @@ address {
   .rg-slider .owl-item {
     height: 100%; }
   .rg-slider .rg-slider__slide {
-    height: 100%; }
+    height: 100%;
+    position: relative; }
     .rg-slider .rg-slider__slide img {
       max-width: 100%;
       height: 100%;
       object-fit: cover; }
+    .rg-slider .rg-slider__slide a {
+      position: absolute;
+      right: 20%;
+      bottom: 110px;
+      display: block;
+      background: rgba(253, 236, 18, 0.8);
+      color: #0054a5;
+      padding: 15px 30px;
+      font-size: 16pt;
+      transition: all 300ms;
+      transition-delay: 1s;
+      transform: translateY(30px) rotate(-15deg);
+      visibility: hidden;
+      opacity: 0; }
+    .rg-slider .rg-slider__slide p {
+      position: absolute;
+      right: 20%;
+      bottom: 40px;
+      display: block;
+      background: rgba(2, 19, 237, 0.8);
+      color: #ffab5a;
+      padding: 15px 30px;
+      font-size: 13pt;
+      transition: all 300ms;
+      transition-delay: 1.3s;
+      transform: translateY(30px);
+      visibility: hidden;
+      opacity: 0; }
+  .rg-slider .owl-item.active .rg-slider__slide a {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) rotate(0deg); }
+  .rg-slider .owl-item.active .rg-slider__slide p {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); }
 
 .rg-about h1 {
   margin-bottom: 15px;
@@ -345,17 +382,17 @@ address {
       display: block;
       padding-top: 4px; }
       .section-offers .rg-offers .rg-offers__slide > a img {
-        object-fit: cover; }
+        object-fit: cover;
+        height: 360px;
+        width: 100%; }
       .section-offers .rg-offers .rg-offers__slide > a img:nth-child(1) {
         left: 0;
-        top: 8px;
+        top: 6px;
         z-index: 1;
-        width: 100%;
         position: absolute;
         filter: blur(4px); }
       .section-offers .rg-offers .rg-offers__slide > a img:nth-child(2) {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
-        width: 100%;
         z-index: 2;
         position: relative; }
     .section-offers .rg-offers .rg-offers__slide h3 {
@@ -698,8 +735,8 @@ address {
       width: 100%;
       object-fit: cover; }
     .rg-countries-aside .rg-countries-aside__slide a h3 {
-      height: 40px;
-      line-height: 40px;
+      height: 60px;
+      line-height: 87px;
       font-size: 12pt;
       text-align: center;
       position: absolute;
