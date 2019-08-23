@@ -63,12 +63,29 @@ namespace Portal.Web
                         action = "Italy"
                     });
                 routes.MapRoute(
-                    name: "italy",
+                    name: "italy-about",
+                    template: "درباره-ایتالیا", new
+                    {
+                        controller = "Countries",
+                        action = "AboutItaly"
+                    });
+
+                routes.MapRoute(
+                    name: "portugal",
                     template: "اخذ-اقامت-پرتغال", new
                     {
                         controller = "Countries",
                         action = "Portugal"
                     });
+                routes.MapRoute(
+                    name: "portugal-about",
+                    template: "درباره-پرتغال", new
+                    {
+                        controller = "Countries",
+                        action = "AboutPortugal"
+                    });
+
+
                 routes.MapRoute(
                     name: "italy",
                     template: "اخذ-اقامت-اسلوونی", new
@@ -76,6 +93,15 @@ namespace Portal.Web
                         controller = "Countries",
                         action = "Slovenia"
                     });
+                routes.MapRoute(
+                    name: "slovenia-about",
+                    template: "درباره-اسلوونی", new
+                    {
+                        controller = "Countries",
+                        action = "AboutSlovenia"
+                    });
+
+
 
                 routes.MapRoute(
                     name: "italy2",

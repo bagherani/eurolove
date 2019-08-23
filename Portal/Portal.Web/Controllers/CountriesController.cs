@@ -15,14 +15,30 @@ namespace Portal.Web.Controllers
             return View();
         }
 
+        public IActionResult AboutItaly()
+        {
+            return View();
+        }
+
+
         public IActionResult Slovenia()
         {
             return View();
         }
+        public IActionResult AboutSlovenia()
+        {
+            return View();
+        }
+
 
         public IActionResult Portugal()
         {
             return View();
         }
+        public IActionResult AboutPortugal()
+        {
+            return View();
+        }
+
     }
 }
