@@ -1,5 +1,16 @@
 ﻿<div class="rg-countries-aside">
 
+    @if (Model != "Slovenia")
+    {
+        <div class="rg-countries-aside__slide">
+            <a href="/اخذ-اقامت-اسلوونی">
+                <img src="~/img/migration-to-slovenia-small.jpg" alt="migration to slovenia">
+                <h3>
+                    اخذ اقامت دائم در کشور اسلوونی
+                </h3>
+            </a>
+        </div>
+    }
     @if (Model != "Italy")
     {
         <div class="rg-countries-aside__slide">
@@ -22,18 +33,18 @@
             </a>
         </div>
     }
-    @if (Model != "Slovenia")
+
+    @if (false && Model != "AboutSlovenia")
     {
         <div class="rg-countries-aside__slide">
-            <a href="/اخذ-اقامت-اسلوونی">
-                <img src="~/img/migration-to-slovenia-small.jpg" alt="migration to slovenia">
+            <a href="/درباره-اسلوونی">
+                <img src="~/img/about-slovenia-small.jpg" alt="about slovenia">
                 <h3>
-                    اخذ اقامت دائم در کشور اسلوونی
+                    در مورد اسلوونی بیشتر بدانید
                 </h3>
             </a>
         </div>
     }
-
     @if (false && Model != "AboutItaly")
     {
         <div class="rg-countries-aside__slide">
@@ -52,17 +63,6 @@
                 <img src="~/img/about-portugal-small.jpg" alt="about portugal">
                 <h3>
                     در مورد پرتغال بیشتر بدانید
-                </h3>
-            </a>
-        </div>
-    }
-    @if (false && Model != "AboutSlovenia")
-    {
-        <div class="rg-countries-aside__slide">
-            <a href="/درباره-اسلوونی">
-                <img src="~/img/about-slovenia-small.jpg" alt="about slovenia">
-                <h3>
-                    در مورد اسلوونی بیشتر بدانید
                 </h3>
             </a>
         </div>
