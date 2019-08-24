@@ -1,19 +1,27 @@
 ﻿<section>
     <header class="rg-header js_header">
         <div class="container rg-header__container">
-            <div class="rg-header__logo__container">
-                <h1 class="rg-header__logo">
-                    <a href="/">
-                        <partial name="_HeaderLogo" />
-                    </a>
-                </h1>
-            </div>
-            <div class="rg-header__nav__container">
-                <div class="rg-header__nav__address-container">
-                    <partial name="_HeaderAddress" />
+            <div class="row">
+                <div class="col-lg-3 col-md-12 rg-header__logo__container">
+                    <div class="text-right d-lg-none d-block menu-handler__container">
+                        <button type="button" class="js_menuHandler">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </div>
+                    <div class="rg-header__logo">
+                        <a href="/">
+                            <partial name="_HeaderLogo" />
+                        </a>
+                    </div>
                 </div>
-                <div class="rg-header__nav__nav-container">
-                    <partial name="_HeaderMenu" />
+
+                <div class="col-lg-9 col-md-12 rg-header__nav__container">
+                    <div class="rg-header__nav__address-container">
+                        <partial name="_HeaderAddress" />
+                    </div>
+                    <div class="rg-header__nav__nav-container">
+                        <partial name="_HeaderMenu" />
+                    </div>
                 </div>
             </div>
         </div>
