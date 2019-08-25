@@ -189,6 +189,8 @@ html.menu-is-open, body.menu-is-open {
       height: 65px;
       position: fixed;
       z-index: 10; } }
+  .rg-header.fixed .rg-header__container .rg-header__logo__container .rg-header__logo a img {
+    height: 65px; }
   .rg-header.fixed .rg-header__container .rg-header__nav__container .rg-header__nav__address-container {
     display: none; }
   .rg-header.fixed .rg-header__container .rg-header__nav__container .rg-header__nav__nav-container nav .rg-header__menu {
@@ -495,6 +497,11 @@ html.menu-is-open, body.menu-is-open {
         position: relative;
         top: initial;
         bottom: initial; } }
+    .rg-why-choose-us .rg-why-text-container ul {
+      padding-right: 30px; }
+      .rg-why-choose-us .rg-why-text-container ul li {
+        padding-top: 3px;
+        padding-bottom: 3px; }
     .rg-why-choose-us .rg-why-text-container .rg-why-items {
       text-align: center; }
       .rg-why-choose-us .rg-why-text-container .rg-why-items .rg-why-item:nth-child(1) div {
@@ -790,8 +797,8 @@ html.menu-is-open, body.menu-is-open {
       width: 100%;
       object-fit: cover; }
     .rg-countries-aside .rg-countries-aside__slide a h3 {
-      height: 60px;
-      line-height: 87px;
+      height: 80px;
+      line-height: 127px;
       font-size: 12pt;
       text-align: center;
       position: absolute;
@@ -801,7 +808,7 @@ html.menu-is-open, body.menu-is-open {
       z-index: 1;
       color: #fff;
       background: #000;
-      background: linear-gradient(0deg, rgba(0, 84, 165, 0.9), transparent);
+      background: linear-gradient(0deg, black, transparent);
       padding: 0 7.5px;
       margin: 0;
       text-shadow: 1px 1px #000; }
