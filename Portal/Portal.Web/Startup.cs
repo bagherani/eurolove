@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WebMarkupMin.AspNetCore2;
 
 namespace Portal.Web
 {
@@ -30,9 +31,23 @@ namespace Portal.Web
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddWebMarkupMin(
+                    options =>
+                    {
+                        options.AllowMinificationInDevelopmentEnvironment = true;
+                        options.AllowCompressionInDevelopmentEnvironment = true;
+                    })
+                    .AddHtmlMinification(
+                        options =>
+                        {
+                            options.MinificationSettings.RemoveRedundantAttributes = true;
+                            options.MinificationSettings.RemoveHttpProtocolFromAttributes = true;
+                            options.MinificationSettings.RemoveHttpsProtocolFromAttributes = true;
+                        })
+                    .AddHttpCompression();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +67,8 @@ namespace Portal.Web
             //app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
+            app.UseWebMarkupMin();
 
             app.UseMvc(routes =>
             {

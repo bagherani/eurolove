@@ -186,11 +186,11 @@ html.menu-is-open, body.menu-is-open {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.28); }
   @media only screen and (min-width: 1024px) {
     .rg-header.fixed {
-      height: 65px;
+      height: auto;
       position: fixed;
       z-index: 10; } }
   .rg-header.fixed .rg-header__container .rg-header__logo__container .rg-header__logo a img {
-    height: 65px; }
+    height: 57px; }
   .rg-header.fixed .rg-header__container .rg-header__nav__container .rg-header__nav__address-container {
     display: none; }
   .rg-header.fixed .rg-header__container .rg-header__nav__container .rg-header__nav__nav-container nav .rg-header__menu {
@@ -223,10 +223,11 @@ html.menu-is-open, body.menu-is-open {
       .rg-header .rg-header__container .rg-header__nav__container .rg-header__nav__address-container a {
         vertical-align: middle;
         font-weight: 400;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
         display: inline-block;
-        transition: all 200ms; }
+        transition: all 200ms;
+        font-size: 10pt; }
         .rg-header .rg-header__container .rg-header__nav__container .rg-header__nav__address-container a.header-address__phone:hover {
           color: #0054a5; }
         .rg-header .rg-header__container .rg-header__nav__container .rg-header__nav__address-container a.header-address__map {
